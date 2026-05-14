@@ -6,7 +6,7 @@ This project was created as part of a college placement assignment.
 
 ## Features
 
-- Firebase login and signup flow
+- Firebase login and signup flow with a browser-based demo fallback
 - Cinematic featured-show hero section
 - TV show gallery loaded from the TVMaze API
 - Top-rated and recent show filters
@@ -45,7 +45,9 @@ For the best development experience, serve the folder with a local static server
 
 ## Firebase Setup
 
-The project includes a Firebase Web configuration in `js/auth.js` so the demo can run as-is. Firebase Web config values are public identifiers, not service account secrets, but you should still protect your Firebase project with proper authorized domains, authentication settings, and security rules.
+The project includes a Firebase Web configuration in `js/auth.js`. If Firebase is not available or the deployed domain is not authorized, the app falls back to browser-based demo authentication using `localStorage` so the assignment can still be reviewed smoothly.
+
+Firebase Web config values are public identifiers, not service account secrets, but you should still protect your Firebase project with proper authorized domains, authentication settings, and security rules.
 
 To use your own Firebase project:
 
