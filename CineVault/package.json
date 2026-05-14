@@ -1,0 +1,14 @@
+{
+  "name": "cinevault",
+  "version": "1.0.0",
+  "description": "A premium streaming catalogue UI built with HTML, CSS, JavaScript, Firebase Auth, and TVMaze data.",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "streaming",
+    "movie-app",
+    "javascript",
+    "firebase",
+    "tvmaze"
+  ]
+}

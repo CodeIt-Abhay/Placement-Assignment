@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVault | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-copy" aria-label="Project introduction">
+      <div class="brand-mark">CineVault</div>
+      <p class="eyebrow">Portfolio streaming experience</p>
+      <h1>Browse shows with a sharper, cinematic interface.</h1>
+      <p class="intro">
+        A polished front-end project with Firebase authentication, TVMaze data,
+        offline cache support, and a responsive premium viewing experience.
+      </p>
+      <div class="auth-stats">
+        <span><strong>200+</strong> shows</span>
+        <span><strong>Live</strong> search</span>
+        <span><strong>Offline</strong> cache</span>
+      </div>
+    </section>
+
+    <section class="login-box" aria-label="Authentication form">
+      <div class="form-header">
+        <span class="form-kicker">Welcome back</span>
+        <h2>Sign in</h2>
+      </div>
+
+      <label for="email">Email address</label>
+      <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+      <p id="authMessage" class="form-message" role="status"></p>
+
+      <button type="button" onclick="login()">Sign In</button>
+      <button type="button" class="secondary-button" onclick="signup()">Create Account</button>
+    </section>
+  </main>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVault | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="header">
+    <a class="logo" href="home.html" aria-label="CineVault home">CineVault</a>
+    <nav class="nav-links" aria-label="Content filters">
+      <button class="nav-link active" type="button" data-filter="all">All</button>
+      <button class="nav-link" type="button" data-filter="rating">Top Rated</button>
+      <button class="nav-link" type="button" data-filter="recent">Recent</button>
+    </nav>
+    <div class="search-container" role="search">
+      <input id="searchInput" placeholder="Search shows, genres, years..." aria-label="Search shows" />
+    </div>
+  </header>
+
+  <section class="hero-section" aria-label="Featured show">
+    <div class="hero-backdrop" id="heroBackdrop"></div>
+    <div class="hero-content">
+      <span class="eyebrow">Featured today</span>
+      <h1 id="heroTitle">Loading shows...</h1>
+      <p id="heroSummary">Finding something worth watching.</p>
+      <div class="hero-meta" id="heroMeta"></div>
+    </div>
+  </section>
+
+  <div id="status" aria-live="polite">Checking connection...</div>
+
+  <main class="main-content">
+    <section class="toolbar" aria-label="Gallery controls">
+      <div>
+        <p class="eyebrow">Explore catalogue</p>
+        <h2>Popular shows</h2>
+      </div>
+      <p id="resultCount">Loading...</p>
+    </section>
+
+    <div id="movies" class="grid"></div>
+    <div id="emptyState" class="empty-state" hidden>
+      <h3>No shows found</h3>
+      <p>Try a different title, genre, or year.</p>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/offline.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/home.js"></script>
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
