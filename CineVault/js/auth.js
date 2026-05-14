@@ -1,11 +1,11 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyB7gaMGu6PV2kOQREXYTaC67wNNYJiqaP8",
-  authDomain: "netflix-2613c.firebaseapp.com",
-  projectId: "netflix-2613c",
-  storageBucket: "netflix-2613c.firebasestorage.app",
-  messagingSenderId: "600788158614",
-  appId: "1:600788158614:web:920d6f5d311f94e18b5ab7",
-  measurementId: "G-QX7WZ8G87L"
+window.firebaseConfig = {
+  apiKey: "AIzaSyB55mJE2aoJBU1MITNPC8ITRJTYJX6tks8",
+  authDomain: "cinevault-f87d8.firebaseapp.com",
+  projectId: "cinevault-f87d8",
+  storageBucket: "cinevault-f87d8.firebasestorage.app",
+  messagingSenderId: "104270493917",
+  appId: "1:104270493917:web:1a44ea96ea122cd90f4334",
+  measurementId: "G-9X8KN8TP9R"
 };
 
 const LOCAL_USERS_KEY = "cinevault-demo-users";
