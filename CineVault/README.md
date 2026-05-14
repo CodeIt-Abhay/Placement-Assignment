@@ -1,4 +1,5 @@
 # CineVault
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://cinevault-f87d8.web.app/)
 
 A premium streaming catalogue UI built with HTML, CSS, and vanilla JavaScript. It includes Firebase email/password authentication, a cinematic show catalogue powered by the TVMaze public API, offline cache support, and polished responsive interactions.
 
