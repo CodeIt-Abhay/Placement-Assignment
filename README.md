@@ -4,7 +4,7 @@ A collection of projects built as part of placement assignments, interview tasks
 
 ## Projects
 
-### 1. CineVault
+### 1. CineVault [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://cinevault-f87d8.web.app/)
 A premium streaming catalogue web app inspired by modern OTT platforms.
 
 #### Highlights
